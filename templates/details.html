@@ -1,0 +1,24 @@
+{%  extends "base.html" %}
+
+
+
+
+{% block content %}
+
+    <h2>All you ever wanted to know about briar pipes</h2>
+    <div>
+
+
+              <img src="https://c647068.ssl.cf2.rackcdn.com/products/002-287-0106.jpg" alt="Dolphin (Butterfly)">
+
+          </div>
+
+    <p>"Artisan" smoking pipes are different from drug store or even factory made pipes. The primary differences are in the materials used and the fact that "artisan" pipes are generally sourced, crafted and finished by hand. Drug store style pipes are generally made from unacceptable wood stocks and the stem material is almost always some form of acrylic resin."Artisan" pipes are made from hand pick briar blocks that have been boiled and air cured generally three to  five years and the stem materials are almost always high quality German ebonite stock.The time spent carving sanding and finishing is usually measured in weeks versus minutes when it comes to factory "drug store types. These are the two primary distinctions between factory or "drug store" and "artisan or handmade pipes </p>
+         {%  for pipe in pipes %}
+    <div>{{ pipe.shape }}</div>
+    <div>{{ pipe.country}}</div>
+    <div>{{ pipe.craftsman }}</div>
+    <br>
+         {% endfor %}
+
+{% endblock %}
